@@ -1,0 +1,32 @@
+<sessiondefaults 
+/>
+
+<!--
+<sessiondefaults 
+    style="default201812risc"
+    language="en"
+    country="US"
+    clienttimezone="LOCAL" or "UTC" or "GMT" or ... or "${serverDefaultTimeZone}"
+    clientlanguage="en"
+    clientcountry="US"
+/>
+
+Sessiom defaults which are used for the Enterprise Client JSF Server sessions.
+    
+style: (optional) style of the styles directory which is applied by default.
+The styles directory is the /eclntjsfserver/styles directory.
+
+If still using the Java-client (Swing/FX) then there is attribute
+"riscstyle" which points to the style to be used for the RISC browser client.
+In this case "style" is used for the Style to be used for the Java client.
+
+language (optional): default language that is used on server side
+Example values: en, de, ...
+
+country (optional): default country settings that are used on server side
+Example values: DE, US, FR, ...
+
+clientlanguage (optional): default language that is used on client side for localization issues
+
+clientcountry (optional): default country that is used on client for localization issues
+-->

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3ea7be9d-4cd3-41c1-a11a-73f2168db86d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZXO9Pf0pNNJm8cbv7C7RzWAZ7G" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/webcontent/WEB-INF/lib/eclnt_ccee.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webcontent/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ea7be9d-4cd3-41c1-a11a-73f2168db86d" name="Default Changelist" comment="" />
+      <created>1584981819436</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584981819436</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2475" y="177" width="800" height="686" key="#Project_Structure" timestamp="1585000167913">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2475" y="177" width="800" height="686" key="#Project_Structure/1920.0.1920.1080/0.0.1920.1032@1920.0.1920.1080" timestamp="1585000167913" />
+    <state x="2688" y="203" width="374" height="635" key="#com.intellij.ide.util.MemberChooser" timestamp="1585127147292">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2688" y="203" width="374" height="635" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.0.1920.1032@1920.0.1920.1080" timestamp="1585127147292" />
+    <state x="2658" y="278" width="424" height="493" key="FileChooserDialogImpl" timestamp="1585000165170">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2658" y="278" width="424" height="493" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1032@1920.0.1920.1080" timestamp="1585000165170" />
+    <state x="2548" y="264" width="663" height="504" key="find.popup" timestamp="1585056638497">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2548" y="264" width="663" height="504" key="find.popup/1920.0.1920.1080/0.0.1920.1032@1920.0.1920.1080" timestamp="1585056638497" />
+  </component>
+</project>

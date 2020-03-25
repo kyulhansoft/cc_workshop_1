@@ -1,0 +1,116 @@
+<literals>
+	<monthName text="Январь"/> 
+	<monthName text="Февраль"/> 
+	<monthName text="Март"/> 
+	<monthName text="Апрель"/> 
+	<monthName text="Май"/> 
+	<monthName text="Июнь"/> 
+	<monthName text="Июль"/> 
+	<monthName text="Август"/> 
+	<monthName text="Сентябрь"/> 
+	<monthName text="Октябрь"/> 
+	<monthName text="Ноябрь"/> 
+	<monthName text="Декабрь"/> 
+	<weekdayNameShort text="Пн"/> 
+	<weekdayNameShort text="Вт"/> 
+	<weekdayNameShort text="Ср"/> 
+	<weekdayNameShort text="Чт"/> 
+	<weekdayNameShort text="Пт"/> 
+	<weekdayNameShort text="Сб"/> 
+	<weekdayNameShort text="Вс"/> 
+	<literal id="alt" text="Alt"/>
+	<literal id="color_blue" text="Синий"/> 
+	<literal id="color_green" text="зелёный"/> 
+	<literal id="color_hexcode" text="код"/> 
+	<literal id="color_palette" text="Паллет"/> 
+	<literal id="color_red" text="Красный"/> 
+	<literal id="color_rgb" text="РГБ"/> 
+	<literal id="confirmExit" text="Вы хотите выйти из приложения?"/> 
+	<literal id="controlAutoComplete" text="комбо поле с пойском"/> 
+	<literal id="controlButton" text="Кнопка"/> 
+	<literal id="controlButton_selected" text="доступен"/> 
+	<literal id="controlButton_unselected" text="недоступен"/> 
+	<literal id="controlCalendarField" text="поле календаря"/> 
+	<literal id="controlCheckBox" text="Ячейка проверки"/>  
+	<literal id="controlCheckBoxValue_false" text="выключен"/> 
+	<literal id="controlCheckBoxValue_true" text="включен"/>
+	<literal id="controlCheckBoxValue_undefined" text="неназначен"/> 
+	<literal id="controlColorField" text="поле цвета"/> 
+	<literal id="controlComboBox" text="Комбо ячейка"/> 
+	<literal id="controlComboField" text="Комбо поле"/>  
+	<literal id="controlField" text="поле"/> 
+	<literal id="controlFieldFormat_color" text="цвет"/> 
+	<literal id="controlFieldFormat_date" text="дата"/> 
+	<literal id="controlFieldFormat_datetime" text="дата и время"/> 
+	<literal id="controlFieldFormat_decimal" text="номер"/> 
+	<literal id="controlFieldFormat_integer" text="целое"/> 
+	<literal id="controlFieldFormat_time" text="время"/> 
+	<literal id="controlHeaderLabel" text="Заголовок столбца"/> 
+	<literal id="controlHeaderLabel_sort_ascending" text="по возрастанию"/> 
+	<literal id="controlHeaderLabel_sort_descending" text="по убыванию"/> 
+	<literal id="controlImage" text="картина"/> 
+	<literal id="controlLabel" text="Ярлык"/> 
+	<literal id="controlMenuItem" text="Пункт меню"/> 
+	<literal id="controlOutlookbarButton" text="выбор аккордеона"/> 
+	<literal id="controlPassword" text="Пароль"/> 
+	<literal id="controlProgressBar" text="шкала прогреса"/> 
+	<literal id="controlRadioButton" text="кнопка радио"/> 
+	<literal id="controlRadioButtonValue_false" text="выключен"/> 
+	<literal id="controlRadioButtonValue_true" text="включен"/> 
+	<literal id="controlSingleTreeNode" text="сучок дерева"/> 
+	<literal id="controlSingleTreeNodeLevel" text="уровень"/> 
+	<literal id="controlSingleTreeNodeStatus0" text="открыто"/> 
+	<literal id="controlSingleTreeNodeStatus1" text="закрыто"/> 
+	<literal id="controlSingleTreeNodeStatus2" text="финальный сучок"/> 
+	<literal id="controlSlider" text="ползунок"/> 
+	<literal id="controlSlider_max" text="максимум"/> 
+	<literal id="controlSlider_min" text="минимум"/> 
+	<literal id="controlTabbedLineButton" text="область выбора"/> 
+	<literal id="controlTextArea" text="область текста"/> 
+	<literal id="controlTextPane" text="текстовая панель"/> 
+	<literal id="copyToClipboard" text="Используйте Ctrl-c для копирования выбранного текста в системе буфер."/> 
+	<literal id="copyToClipboardMenuItemText" text="копировать текст: "/> 
+	<literal id="copyToClipboardTitle" text="копировать в буфер"/> 
+	<literal id="ctrl" text="Ctrl"/>
+	<literal id="dataTransferErrorMessage" text="Невозможно связаться с сервером (количество попыток: ${numberOfAttempts}). &#34;OK&#34;: Клиент продолжит попытки подключения. &#34;Cancel&#34;: Клиент будет отменять связь. Входные данные могут быть потеряны."/> 
+	<literal id="daySelectionWarning" text="Обратите внимание: ${comment}"/> 
+	<literal id="filechooser_cancel" text="отмена"/> 
+	<literal id="filechooser_clear" text="очистит лист"/> 
+	<literal id="filechooser_clearFile" text="удалить"/> 
+	<literal id="filechooser_selectFiles" text="выбрать файл..."/> 
+	<literal id="filechooser_selectedFiles" text="выбранный файл (ы):"/> 
+	<literal id="filechooser_upload" text="принимать"/> 
+	<literal id="fileupload" text="загрузка файла"/> 
+	<literal id="fileupload_cancel" text="отменить"/> 
+	<literal id="fileupload_clear" text="очистит лист"/>
+	<literal id="fileupload_clearFile" text="удалить"/> 
+	<literal id="fileupload_maxfilesize" text="Превышен максимальный размер загрузки (${value} кБ)."/> 
+	<literal id="fileupload_maxnumberoffiles" text="Превышено максимальное количество файлов (${value})."/> 
+	<literal id="fileupload_maxsinglefilesize" text="Превышен максимальный размер файла (${value} кБ)."/> 
+	<literal id="fileupload_problemduringupload" text="Проблема возникла во время загрузки файла."/> 
+	<literal id="fileupload_selectFiles" text="Выберите файлы для загрузки..."/> 
+	<literal id="fileupload_selectedFiles" text="выбранный файл (ы):"/> 
+	<literal id="fileupload_upload" text="загрузка..."/> 
+	<literal id="fileupload_extensiondoesnotmatch" text="Расширение не соответствует"/> 
+	<literal id="formatAdviceDay" text="дд"/> 
+	<literal id="formatAdviceHour" text="чч"/> 
+	<literal id="formatAdviceMinute" text="мм"/> 
+	<literal id="formatAdviceMonth" text="мм"/> 
+	<literal id="formatAdviceSecond" text="сс"/> 
+	<literal id="formatAdviceYear" text="гггг"/> 
+	<literal id="hintFromIncorrectValueReset" text="от значения: &#34;${value}&#34;"/> 
+	<literal id="hintIncorrectValueReset" text="формат: &#34;${format}&#34;"/> 
+	<literal id="hintToIncorrectValueReset" text="до значения: &#34;${value}&#34;"/> 
+	<literal id="messageIncorrectValue" text="Неверное значение &#34;${value}&#34; - пожалуйста проверьте."/> 
+	<literal id="messageIncorrectValueReset" text="Неверное значение &#34;${value}&#34; - значение сбрасывается на предыдущее значение."/> 
+	<literal id="ok" text="Ок"/> 
+	<literal id="popupMenuFocus" text="Фокус ${value}"/> 
+	<literal id="riscpdfprinterpopup_button_notprinted" text="Документ НЕ был напечатан"/> 
+	<literal id="riscpdfprinterpopup_button_printed" text="Документ был распечатан"/> 
+	<literal id="riscpdfprinterpopup_confirmlabel" text="Пожалуйста, подтвердите:"/> 
+	<literal id="riscpdfprinterpopup_openlink" text="Открыть документ в собственном браузере"/> 
+	<literal id="shift" text="Смена"/> 
+	<literal id="today" text="Сегодня"/> 
+	<literal id="todayShort" text="Сегодня"/> 
+	<literal id="zzzzz" text="ззззз"/> 
+</literals>

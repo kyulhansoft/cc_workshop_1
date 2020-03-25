@@ -1,0 +1,116 @@
+<literals>
+    <monthName text="Ianuarie"/> 
+    <monthName text="Februarie"/> 
+    <monthName text="Martie"/> 
+    <monthName text="Aprilie"/> 
+    <monthName text="Mai"/> 
+    <monthName text="Iunie"/> 
+    <monthName text="Iulie"/> 
+    <monthName text="August"/> 
+    <monthName text="Septembrie"/> 
+    <monthName text="Octombrie"/> 
+    <monthName text="Noiembrie"/> 
+    <monthName text="Decembrie"/> 
+    <weekdayNameShort text="Lun"/> 
+    <weekdayNameShort text="Mar"/>  
+    <weekdayNameShort text="Mie"/> 
+    <weekdayNameShort text="Joi"/> 
+    <weekdayNameShort text="Vin"/> 
+    <weekdayNameShort text="Sam"/> 
+    <weekdayNameShort text="Dum"/> 
+    <literal id="alt" text="Alt"/>
+    <literal id="color_blue" text="Albastru"/> 
+    <literal id="color_green" text="Verde"/> 
+    <literal id="color_hexcode" text="Cod hex"/> 
+    <literal id="color_palette" text="Paleta"/> 
+    <literal id="color_red" text="Rosu"/>  
+    <literal id="color_rgb" text="Culoare RVA"/> 
+    <literal id="confirmExit" text="Doriti sa iesiti din aplicatie?"/>  
+    <literal id="controlAutoComplete" text="Camp combo si cautare"/> 
+    <literal id="controlButton" text="Buton"/>  
+    <literal id="controlButton_selected" text="Activ"/> 
+    <literal id="controlButton_unselected" text="Inactiv"/> 
+    <literal id="controlCalendarField" text="Campul clendaristic"/> 
+    <literal id="controlCheckBox" text="Casuta de bifat"/> 
+    <literal id="controlCheckBoxValue_false" text="oprit"/> 
+    <literal id="controlCheckBoxValue_true" text="pornit"/> 
+    <literal id="controlCheckBoxValue_undefined" text="Nedefinit"/> 
+    <literal id="controlColorField" text="Camp de culoare"/> 
+    <literal id="controlComboBox" text="casuta combo"/> 
+    <literal id="controlComboField" text="camp combo"/> 
+    <literal id="controlField" text="camp"/> 
+    <literal id="controlFieldFormat_color" text="culoare"/> 
+    <literal id="controlFieldFormat_date" text="data"/> 
+    <literal id="controlFieldFormat_datetime" text="timp si data"/>  
+    <literal id="controlFieldFormat_decimal" text="numar"/> 
+    <literal id="controlFieldFormat_integer" text="integer"/>
+    <literal id="controlFieldFormat_time" text="timp"/> 
+    <literal id="controlHeaderLabel" text="antet de coloana"/> 
+    <literal id="controlHeaderLabel_sort_ascending" text="ascendent"/> 
+    <literal id="controlHeaderLabel_sort_descending" text="descendent "/> 
+    <literal id="controlImage" text="imagine"/> 
+    <literal id="controlLabel" text="eticheta"/> 
+    <literal id="controlMenuItem" text="articol din meniu"/> 
+    <literal id="controlOutlookbarButton" text="Accordion selection"/>
+    <literal id="controlPassword" text="Parola"/> 
+    <literal id="controlProgressBar" text="bara de progres"/> 
+    <literal id="controlRadioButton" text="buton radio"/> 
+    <literal id="controlRadioButtonValue_false" text="inchis"/> 
+    <literal id="controlRadioButtonValue_true" text="deschis"/> 
+    <literal id="controlSingleTreeNode" text="Nodul capacului"/> 
+    <literal id="controlSingleTreeNodeLevel" text="Nivel"/> 
+    <literal id="controlSingleTreeNodeStatus0" text="deschis"/> 
+    <literal id="controlSingleTreeNodeStatus1" text="inchis"/> 
+    <literal id="controlSingleTreeNodeStatus2" text="nod final"/> 
+    <literal id="controlSlider" text="cursor"/> 
+    <literal id="controlSlider_max" text="maxim"/> 
+    <literal id="controlSlider_min" text="minim"/> 
+    <literal id="controlTabbedLineButton" text="selectarea zonei"/> 
+    <literal id="controlTextArea" text="zona de text"/> 
+    <literal id="controlTextPane" text="panou text"/> 
+    <literal id="copyToClipboard" text="Folositi ctrl- C pentru a copia textul selectat in panoul de bord al sistemului."/> 
+    <literal id="copyToClipboardMenuItemText" text="Copiaza textul: "/> 
+    <literal id="copyToClipboardTitle" text="copiati in clipboard"/> 
+    <literal id="ctrl" text="Ctrl"/>
+    <literal id="dataTransferErrorMessage" text="Server-ul nu poate fi accesat (numarul de incercari: ${numberOfAttempts}).&#10;&#10;&#34;OK&#34;: Clientul va continua sa incerce sa se conecteze &#10;&#34;Anuleaza&#34;: Clientul va anula comunicarea. Datele de intrare s-ar putea pierde."/>
+    <literal id="daySelectionWarning" text="Acordati Atentie: ${comment}"/> 
+    <literal id="filechooser_cancel" text="anulare"/>
+    <literal id="filechooser_clear" text="Curata lista"/> 
+    <literal id="filechooser_clearFile" text="Inlaturare"/> 
+    <literal id="filechooser_selectFiles" text="Selecteaza Fisierul..."/> 
+    <literal id="filechooser_selectedFiles" text="Selecteaza Fisiere:"/> 
+    <literal id="filechooser_upload" text="Preluare"/> 
+    <literal id="fileupload" text="Incarcare Fisier"/> 
+    <literal id="fileupload_cancel" text="Anulare"/> 
+    <literal id="fileupload_clear" text="Sterge lista"/>  
+    <literal id="fileupload_clearFile" text="Indepartare"/> 
+    <literal id="fileupload_maxfilesize" text="Dimensiunea maxima a fisierelor incarcate (${value} kB) depasita."/> 
+    <literal id="fileupload_maxnumberoffiles" text="Numarul maxim de fisiere (${value}) depasit."/> 
+    <literal id="fileupload_maxsinglefilesize" text="Numarul maxim de fisiere (${value} kB) incarcate."/> 
+    <literal id="fileupload_problemduringupload" text="Problema aparuta in timpul incarcarii fisierului ."/> 
+    <literal id="fileupload_selectFiles" text="Selecteaza fisiere pentru incarcare..."/>  
+    <literal id="fileupload_selectedFiles" text="selectat(e):"/>
+    <literal id="fileupload_upload" text="incarca..."/> 
+    <literal id="fileupload_extensiondoesnotmatch" text="Extensia nu se potriveste"/>  
+    <literal id="formatAdviceDay" text="dd"/>
+    <literal id="formatAdviceHour" text="hh"/>
+    <literal id="formatAdviceMinute" text="mm"/>
+    <literal id="formatAdviceMonth" text="mm"/>
+    <literal id="formatAdviceSecond" text="ss"/>
+    <literal id="formatAdviceYear" text="yyyy"/>
+    <literal id="hintFromIncorrectValueReset" text="De la valoarea: &#34;${value}&#34;"/>  
+    <literal id="hintIncorrectValueReset" text="Format: &#34;${format}&#34;"/>
+    <literal id="hintToIncorrectValueReset" text="La valoare &#34;${value}&#34;"/> 
+    <literal id="messageIncorrectValue" text="Valoare incorecta &#34;${value}&#34; va rog verificati ."/> 
+    <literal id="messageIncorrectValueReset" text="Valoare incorecta &#34;${value}&#34; - valoarea actuala este resetata la valoarea anterioara."/> 
+    <literal id="ok" text="OK"/> 
+    <literal id="popupMenuFocus" text="concentrare ${text}"/> 
+    <literal id="riscpdfprinterpopup_button_notprinted" text="Documentu nu a fost printat"/>  
+    <literal id="riscpdfprinterpopup_button_printed" text="Documentul a fost printat "/> 
+    <literal id="riscpdfprinterpopup_confirmlabel" text="Va rugam confirmati explicit:"/> 
+    <literal id="riscpdfprinterpopup_openlink" text="Deschideti fisier in propriul browser"/> 
+    <literal id="shift" text="Tura"/> 
+    <literal id="today" text="Astazi"/> 
+    <literal id="todayShort" text="Astazi"/> 
+    <literal id="zzzzz" text="zzzzz"/>
+</literals>
