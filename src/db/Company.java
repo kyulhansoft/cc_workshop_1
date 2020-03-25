@@ -6,17 +6,17 @@ import org.eclnt.ccee.db.dofw.annotations.doproperty;
 
 @doentity(table="public.\"Company\"")
 public class Company {
-    private int id;
+    private Integer id;
     private String name;
     private int year;
     private int bulstat;
 
-    @doproperty(key=true)
-    public int getId() {
+    @doproperty(key=true, autoIncrement=true)
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

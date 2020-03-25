@@ -1,9 +1,12 @@
 package managedbeans;
 
 import java.io.Serializable;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.List;
 
 import db.Company;
+import org.eclnt.ccee.db.DBAction;
 import org.eclnt.ccee.db.dofw.DOFWSql;
 import org.eclnt.editor.annotations.CCGenClass;
 import org.eclnt.jsfserver.defaultscreens.Statusbar;
@@ -86,6 +89,30 @@ public class CompanyUI extends PageBean implements Serializable
 
         );
         DOFWSql.saveObject(row.getCompany());
+    }
+
+    public void onAddAction(javax.faces.event.ActionEvent event) {
+        Statusbar.outputMessage("on add");
+
+        Company c = new Company();
+        //c.setId(null);
+        c.setName("KyulhanSoft6");
+        c.setYear(2020);
+        c.setBulstat(710228);
+        DOFWSql.saveObject(c);
+
+        new DBAction() {
+            @Override
+            protected void run() throws Exception {
+                PreparedStatement ps = createStatement(
+                        "insert into public.\"Company\" (name, year, bulstat) values (?, ?, ?)"
+                );
+                ps.setString(1, "Assss");
+                ps.setInt(2, 2020);
+                ps.setInt(3, 710228);
+                ps.executeUpdate();
+            }
+        };
     }
 
     // ------------------------------------------------------------------------

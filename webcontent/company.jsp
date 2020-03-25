@@ -54,8 +54,11 @@
 </t:row>
 </t:pane>
 </t:row>
+<t:row id="g_32" >
+<t:button id="g_33" actionListener="#{d.CompanyUI.onAddAction}" text="Add" />
+</t:row>
 </t:rowbodypane>
-<t:rowstatusbar id="g_32" />
+<t:rowstatusbar id="g_34" />
 <t:pageaddons id="g_pa"/>
 </f:subview>
 </h:form>
