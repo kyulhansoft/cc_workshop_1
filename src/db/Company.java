@@ -4,18 +4,20 @@ import org.eclnt.ccee.db.dofw.DOFWSql;
 import org.eclnt.ccee.db.dofw.annotations.doentity;
 import org.eclnt.ccee.db.dofw.annotations.doproperty;
 
+import java.time.LocalDate;
+
 @doentity(table="public.\"Company\"")
 public class Company {
     private Integer id;
     private String name;
     private int year;
     private int bulstat;
+    private LocalDate dateEst;
 
     @doproperty(key=true, autoIncrement=true)
     public Integer getId() {
         return id;
     }
-
     public void setId(Integer id) {
         this.id = id;
     }
@@ -24,7 +26,6 @@ public class Company {
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -33,7 +34,6 @@ public class Company {
     public int getYear() {
         return year;
     }
-
     public void setYear(int year) {
         this.year = year;
     }
@@ -42,8 +42,15 @@ public class Company {
     public int getBulstat() {
         return bulstat;
     }
-
     public void setBulstat(int bulstat) {
         this.bulstat = bulstat;
+    }
+
+    @doproperty
+    public LocalDate getDate_est() {
+        return dateEst;
+    }
+    public void setDate_est(LocalDate dateEst) {
+        this.dateEst = dateEst;
     }
 }

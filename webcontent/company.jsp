@@ -29,36 +29,44 @@
 <t:gridcol id="g_13" text="Bulstat" width="30%" >
 <t:label id="g_14" text=".{company.bulstat}" />
 </t:gridcol>
+<t:gridcol id="g_15" text="DateEst" width="100" >
+<t:label id="g_16" format="date" text=".{company.date_est}" />
+</t:gridcol>
 </t:fixgrid>
 </t:row>
-<t:rowdistance id="g_15" height="13" />
-<t:row id="g_16" rendered="#{d.CompanyUI.selCompanyRow != null}" >
-<t:pane id="g_17" rowdistance="5" width="100%" >
-<t:row id="g_18" >
-<t:label id="g_19" text="Name" width="70" />
-<t:field id="g_20" text="#{d.CompanyUI.selCompanyRow.company.name}" width="200" />
+<t:rowdistance id="g_17" height="13" />
+<t:row id="g_18" rendered="#{d.CompanyUI.selCompanyRow != null}" >
+<t:pane id="g_19" rowdistance="5" width="100%" >
+<t:row id="g_20" >
+<t:label id="g_21" text="Name" width="70" />
+<t:field id="g_22" text="#{d.CompanyUI.selCompanyRow.company.name}" width="200" />
 </t:row>
-<t:row id="g_21" >
-<t:label id="g_22" text="Year" width="70" />
-<t:field id="g_23" restricttokeys="0123456789" text="#{d.CompanyUI.selCompanyRow.company.year}" width="100" />
+<t:row id="g_23" >
+<t:label id="g_24" text="Year" width="70" />
+<t:field id="g_25" restricttokeys="0123456789" text="#{d.CompanyUI.selCompanyRow.company.year}" width="100" />
 </t:row>
-<t:row id="g_24" >
-<t:label id="g_25" text="Bulstat" width="70" />
-<t:field id="g_26" restricttokeys="0123456789" text="#{d.CompanyUI.selCompanyRow.company.bulstat}" width="100" />
+<t:row id="g_26" >
+<t:label id="g_27" text="Bulstat" width="70" />
+<t:field id="g_28" restricttokeys="0123456789" text="#{d.CompanyUI.selCompanyRow.company.bulstat}" width="100" />
 </t:row>
-<t:rowdistance id="g_27" height="13" />
-<t:row id="g_28" >
-<t:button id="g_29" actionListener="#{d.CompanyUI.onSaveAction}" text="Save" />
-<t:coldistance id="g_30" width="30" />
-<t:button id="g_31" actionListener="#{d.CompanyUI.onDeleteAction}" text="Delete" />
+<t:row id="g_29" >
+<t:label id="g_30" text="DateEst" width="70" />
+<t:calendarfield id="g_31" timezone="UTC" value="#{d.CompanyUI.selCompanyRow.company.date_est}" width="100" />
+</t:row>
+<t:rowdistance id="g_32" height="13" />
+<t:row id="g_33" >
+<t:button id="g_34" actionListener="#{d.CompanyUI.onSaveAction}" text="Save" />
+<t:coldistance id="g_35" width="30" />
+<t:button id="g_36" actionListener="#{d.CompanyUI.onDeleteAction}" text="Delete" />
 </t:row>
 </t:pane>
 </t:row>
-<t:row id="g_32" >
-<t:button id="g_33" actionListener="#{d.CompanyUI.onAddAction}" text="Add" />
+<t:rowdistance id="g_37" height="13" />
+<t:row id="g_38" >
+<t:button id="g_39" actionListener="#{d.CompanyUI.onAddAction}" text="Add New" />
 </t:row>
 </t:rowbodypane>
-<t:rowstatusbar id="g_34" />
+<t:rowstatusbar id="g_40" />
 <t:pageaddons id="g_pa"/>
 </f:subview>
 </h:form>

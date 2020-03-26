@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ea7be9d-4cd3-41c1-a11a-73f2168db86d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/Company.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/managedbeans/CompanyUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/managedbeans/CompanyUI.java" afterDir="false" />
@@ -61,10 +60,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2475" y="177" width="1068" height="686" key="#Project_Structure/1920.0.1920.1080/0.0.1920.1032@1920.0.1920.1080" timestamp="1585131677939" />
-    <state x="2688" y="203" width="374" height="635" key="#com.intellij.ide.util.MemberChooser" timestamp="1585127147292">
+    <state x="2688" y="203" width="374" height="635" key="#com.intellij.ide.util.MemberChooser" timestamp="1585215089066">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2688" y="203" width="374" height="635" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.0.1920.1032@1920.0.1920.1080" timestamp="1585127147292" />
+    <state x="2688" y="203" width="374" height="635" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.0.1920.1032@1920.0.1920.1080" timestamp="1585215089066" />
     <state x="2842" y="275" width="745" height="662" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1585131676833">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
