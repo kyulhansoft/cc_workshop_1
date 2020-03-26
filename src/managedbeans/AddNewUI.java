@@ -1,6 +1,8 @@
 package managedbeans;
 
 import java.io.Serializable;
+import java.time.LocalDate;
+
 import org.eclnt.editor.annotations.CCGenClass;
 import org.eclnt.jsfserver.pagebean.PageBean;
 
@@ -8,9 +10,7 @@ import javax.faces.event.ActionEvent;
 
 @CCGenClass (expressionBase="#{d.AddNewUI}")
 
-public class AddNewUI
-    extends PageBean 
-    implements Serializable
+public class AddNewUI extends PageBean implements Serializable
 {
     // ------------------------------------------------------------------------
     // inner classes
@@ -24,6 +24,10 @@ public class AddNewUI
     // ------------------------------------------------------------------------
     // members
     // ------------------------------------------------------------------------
+    private String name;
+    private Integer year;
+    private Integer bulstat;
+    private LocalDate dateEst;
     
     private IListener m_listener;
     

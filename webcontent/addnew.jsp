@@ -28,10 +28,14 @@
 <t:field id="g_13" width="100" />
 </t:row>
 <t:row id="g_14" >
-<t:button id="g_15" text="Save" />
+<t:label id="g_15" text="DateEst" width="100" />
+<t:calendarfield id="g_16" timezone="UTC" width="100" />
+</t:row>
+<t:row id="g_17" >
+<t:button id="g_18" text="Save" />
 </t:row>
 </t:rowbodypane>
-<t:rowstatusbar id="g_16" />
+<t:rowstatusbar id="g_19" />
 <t:pageaddons id="g_pa"/>
 </f:subview>
 </h:form>

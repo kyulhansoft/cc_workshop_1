@@ -19,11 +19,6 @@ import javax.faces.event.ActionEvent;
 
 public class CompanyUI extends PageBean implements Serializable
 {
-    FIXGRIDListBinding<CompanyRow> gridCompanies = new FIXGRIDListBinding<CompanyRow>();
-    public FIXGRIDListBinding<CompanyRow> getGridCompanies() {
-        return gridCompanies;
-    }
-
     // ------------------------------------------------------------------------
     // inner classes
     // ------------------------------------------------------------------------
@@ -36,9 +31,11 @@ public class CompanyUI extends PageBean implements Serializable
     // ------------------------------------------------------------------------
     // members
     // ------------------------------------------------------------------------
-    
+    FIXGRIDListBinding<CompanyRow> gridCompanies = new FIXGRIDListBinding<CompanyRow>();
+    public FIXGRIDListBinding<CompanyRow> getGridCompanies() {
+        return gridCompanies;
+    }
     private IListener m_listener;
-
     public CompanyRow m_selCompanyRow;
     public CompanyRow getSelCompanyRow() {
         return m_selCompanyRow;
@@ -56,9 +53,6 @@ public class CompanyUI extends PageBean implements Serializable
         });
     }
 
-    public String getPageName() { return "/company.jsp"; }
-    public String getRootExpressionUsedInPage() { return "#{d.CompanyUI}"; }
-
     // ------------------------------------------------------------------------
     // public usage
     // ------------------------------------------------------------------------
@@ -67,6 +61,8 @@ public class CompanyUI extends PageBean implements Serializable
     public void prepare(IListener listener) {
         m_listener = listener;
     }
+    public String getPageName() { return "/company.jsp"; }
+    public String getRootExpressionUsedInPage() { return "#{d.CompanyUI}"; }
 
     public void selectCompanyRow(CompanyRow companyRow) {
         if (m_selCompanyRow != null) m_selCompanyRow.getChangeIndex().indicateChange();
@@ -92,8 +88,8 @@ public class CompanyUI extends PageBean implements Serializable
     }
 
     public void onAddAction(javax.faces.event.ActionEvent event) {
-        Statusbar.outputMessage("on add");
-        System.out.println("+++ ON ADD +++");
+        //Statusbar.outputMessage("on add");
+        //System.out.println("+++ ON ADD +++");
         //Company c = new Company();
         ////c.setId(null);
         //c.setName("KyulhanSoft6");
