@@ -56,7 +56,30 @@ public class AddNewUI extends PageBean implements Serializable
     }
 
     public void onSaveAction(javax.faces.event.ActionEvent event) {
-        DOFWSql.saveObject(company);
+        if (getName() == null || getName().equals("")) {
+            Statusbar.outputAlert("Field Name is empty");
+            return;
+        }
+        if (getYear() == null || getYear() == 0) {
+            Statusbar.outputAlert("Field Year is empty");
+            return;
+        }
+        if (getBulstat() == null || getBulstat() == 0) {
+            Statusbar.outputAlert("Field Bulstat is empty");
+            return;
+        }
+        if (getDateEst() == null || getDateEst().toString().equals("")) {
+            Statusbar.outputAlert("Field DateEst is empty");
+            return;
+        }
+        try {
+            DOFWSql.saveObject(company);
+            //closePopup(this); not working
+            Statusbar.outputMessageWithPopup("The new company was added");
+        } catch (Exception e) {
+            Statusbar.outputAlert(e.getMessage());
+        }
+
     }
 
     public String getName() {
