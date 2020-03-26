@@ -3,7 +3,10 @@ package managedbeans;
 import java.io.Serializable;
 import java.time.LocalDate;
 
+import db.Company;
+import org.eclnt.ccee.db.dofw.DOFWSql;
 import org.eclnt.editor.annotations.CCGenClass;
+import org.eclnt.jsfserver.defaultscreens.Statusbar;
 import org.eclnt.jsfserver.pagebean.PageBean;
 
 import javax.faces.event.ActionEvent;
@@ -28,7 +31,7 @@ public class AddNewUI extends PageBean implements Serializable
     private Integer year;
     private Integer bulstat;
     private LocalDate dateEst;
-    
+    private Company company = new Company();
     private IListener m_listener;
     
     // ------------------------------------------------------------------------
@@ -50,6 +53,46 @@ public class AddNewUI extends PageBean implements Serializable
     public void prepare(IListener listener)
     {
         m_listener = listener;
+    }
+
+    public void onSaveAction(javax.faces.event.ActionEvent event) {
+        DOFWSql.saveObject(company);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+        company.setName(name);
+    }
+
+    public Integer getYear() {
+        return year;
+    }
+
+    public void setYear(Integer year) {
+        this.year = year;
+        company.setYear(year);
+    }
+
+    public Integer getBulstat() {
+        return bulstat;
+    }
+
+    public void setBulstat(Integer bulstat) {
+        this.bulstat = bulstat;
+        company.setBulstat(bulstat);
+    }
+
+    public LocalDate getDateEst() {
+        return dateEst;
+    }
+
+    public void setDateEst(LocalDate dateEst) {
+        this.dateEst = dateEst;
+        company.setDate_est(dateEst);
     }
 
     // ------------------------------------------------------------------------

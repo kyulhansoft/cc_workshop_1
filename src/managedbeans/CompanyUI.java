@@ -9,6 +9,7 @@ import db.Company;
 import org.eclnt.ccee.db.DBAction;
 import org.eclnt.ccee.db.dofw.DOFWSql;
 import org.eclnt.editor.annotations.CCGenClass;
+import org.eclnt.jsfserver.defaultscreens.ModalPopup;
 import org.eclnt.jsfserver.defaultscreens.Statusbar;
 import org.eclnt.jsfserver.elements.impl.FIXGRIDItem;
 import org.eclnt.jsfserver.elements.impl.FIXGRIDListBinding;
@@ -53,6 +54,9 @@ public class CompanyUI extends PageBean implements Serializable
         });
     }
 
+    public String getPageName() { return "/company.jsp"; }
+    public String getRootExpressionUsedInPage() { return "#{d.CompanyUI}"; }
+
     // ------------------------------------------------------------------------
     // public usage
     // ------------------------------------------------------------------------
@@ -61,11 +65,9 @@ public class CompanyUI extends PageBean implements Serializable
     public void prepare(IListener listener) {
         m_listener = listener;
     }
-    public String getPageName() { return "/company.jsp"; }
-    public String getRootExpressionUsedInPage() { return "#{d.CompanyUI}"; }
 
     public void selectCompanyRow(CompanyRow companyRow) {
-        if (m_selCompanyRow != null) m_selCompanyRow.getChangeIndex().indicateChange();
+        //if (m_selCompanyRow != null) m_selCompanyRow.getChangeIndex().indicateChange();
         m_selCompanyRow = companyRow;
         m_selCompanyRow.getChangeIndex().indicateChange();
     }
@@ -88,6 +90,14 @@ public class CompanyUI extends PageBean implements Serializable
     }
 
     public void onAddAction(javax.faces.event.ActionEvent event) {
+        final AddNewUI bean = new AddNewUI();
+        openModalPopup(bean, "", 600, 500, new ModalPopup.IModalPopupListener() {
+            @Override
+            public void reactOnPopupClosedByUser() {
+                closePopup(bean);
+            }
+        });
+
         //Statusbar.outputMessage("on add");
         //System.out.println("+++ ON ADD +++");
         //Company c = new Company();

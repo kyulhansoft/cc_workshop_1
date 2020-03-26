@@ -12,27 +12,27 @@
 <h:form>
 <f:subview id="addnewg_sv">
 <t:beanprocessing id="g_1" beanbinding="#{d.AddNewUI}" />
-<t:rowtitlebar id="g_2" text="Add New" />
+<t:rowtitlebar id="g_2" text="Add New Company" />
 <t:rowheader id="g_3" />
 <t:rowbodypane id="g_4" rowdistance="20" >
 <t:row id="g_5" >
 <t:label id="g_6" text="Name" width="100" />
-<t:field id="g_7" width="300" />
+<t:field id="g_7" text="#{d.AddNewUI.name}" width="300" />
 </t:row>
 <t:row id="g_8" >
 <t:label id="g_9" text="Year" width="100" />
-<t:field id="g_10" width="100" />
+<t:field id="g_10" text="#{d.AddNewUI.year}" width="100" />
 </t:row>
 <t:row id="g_11" >
 <t:label id="g_12" text="Bulstat" width="100" />
-<t:field id="g_13" width="100" />
+<t:field id="g_13" text="#{d.AddNewUI.bulstat}" width="100" />
 </t:row>
 <t:row id="g_14" >
 <t:label id="g_15" text="DateEst" width="100" />
-<t:calendarfield id="g_16" timezone="UTC" width="100" />
+<t:calendarfield id="g_16" timezone="UTC" value="#{d.AddNewUI.dateEst}" width="100" />
 </t:row>
 <t:row id="g_17" >
-<t:button id="g_18" text="Save" />
+<t:button id="g_18" actionListener="#{d.AddNewUI.onSaveAction}" text="Save" />
 </t:row>
 </t:rowbodypane>
 <t:rowstatusbar id="g_19" />
