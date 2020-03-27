@@ -21,11 +21,11 @@
 </t:row>
 <t:row id="g_8" >
 <t:label id="g_9" text="Year" width="100" />
-<t:field id="g_10" text="#{d.AddNewUI.year}" width="100" />
+<t:field id="g_10" restricttokeys="0123456789" text="#{d.AddNewUI.year}" width="100" />
 </t:row>
 <t:row id="g_11" >
 <t:label id="g_12" text="Bulstat" width="100" />
-<t:field id="g_13" text="#{d.AddNewUI.bulstat}" width="100" />
+<t:field id="g_13" restricttokeys="0123456789" text="#{d.AddNewUI.bulstat}" width="100" />
 </t:row>
 <t:row id="g_14" >
 <t:label id="g_15" text="DateEst" width="100" />

@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ea7be9d-4cd3-41c1-a11a-73f2168db86d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ec_cc_workshop_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ec_cc_workshop_1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/managedbeans/AddNewUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/managedbeans/AddNewUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/managedbeans/CompanyUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/managedbeans/CompanyUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webcontent/addnew.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webcontent/addnew.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webcontent/company.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webcontent/company.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +65,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2475" y="177" width="1068" height="686" key="#Project_Structure" timestamp="1585131677939">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="555" y="170" width="1068" height="686" key="#Project_Structure" timestamp="1585345990817">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="555" y="170" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585345990817" />
     <state x="2475" y="177" width="1068" height="686" key="#Project_Structure/1920.0.1920.1080/0.0.1920.1032@1920.0.1920.1080" timestamp="1585131677939" />
     <state x="2688" y="203" width="374" height="635" key="#com.intellij.ide.util.MemberChooser" timestamp="1585225622130">
       <screen x="1920" y="0" width="1920" height="1080" />

@@ -6,7 +6,7 @@ import org.eclnt.ccee.db.dofw.annotations.doproperty;
 
 import java.time.LocalDate;
 
-@doentity(table="public.\"Company\"")
+@doentity(table="company")
 public class Company {
     private Integer id;
     private String name;
@@ -46,11 +46,12 @@ public class Company {
         this.bulstat = bulstat;
     }
 
+    //@doproperty(column="date_est")
     @doproperty
-    public LocalDate getDate_est() {
+    public LocalDate getDateEst() {
         return dateEst;
     }
-    public void setDate_est(LocalDate dateEst) {
+    public void setDateEst(LocalDate dateEst) {
         this.dateEst = dateEst;
     }
 }

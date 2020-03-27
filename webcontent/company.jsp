@@ -30,7 +30,7 @@
 <t:label id="g_14" text=".{company.bulstat}" />
 </t:gridcol>
 <t:gridcol id="g_15" text="DateEst" width="100" >
-<t:label id="g_16" format="date" text=".{company.date_est}" />
+<t:label id="g_16" format="date" text=".{company.dateEst}" />
 </t:gridcol>
 </t:fixgrid>
 </t:row>
@@ -51,7 +51,7 @@
 </t:row>
 <t:row id="g_29" >
 <t:label id="g_30" text="DateEst" width="70" />
-<t:calendarfield id="g_31" timezone="UTC" value="#{d.CompanyUI.selCompanyRow.company.date_est}" width="100" />
+<t:calendarfield id="g_31" timezone="UTC" value="#{d.CompanyUI.selCompanyRow.company.dateEst}" width="100" />
 </t:row>
 <t:rowdistance id="g_32" height="13" />
 <t:row id="g_33" >

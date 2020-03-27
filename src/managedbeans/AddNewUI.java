@@ -33,13 +33,15 @@ public class AddNewUI extends PageBean implements Serializable
     private LocalDate dateEst;
     private Company company = new Company();
     private IListener m_listener;
-    
+    private CompanyUI companyUI;
+
     // ------------------------------------------------------------------------
     // constructors & initialization
     // ------------------------------------------------------------------------
 
-    public AddNewUI()
+    public AddNewUI(CompanyUI companyUI)
     {
+        this.companyUI = companyUI;
     }
 
     public String getPageName() { return "/addnew.jsp"; }
@@ -74,12 +76,17 @@ public class AddNewUI extends PageBean implements Serializable
         }
         try {
             DOFWSql.saveObject(company);
-            //closePopup(this); not working
+
+            companyUI.insertRow(company);
             Statusbar.outputMessageWithPopup("The new company was added");
         } catch (Exception e) {
             Statusbar.outputAlert(e.getMessage());
         }
 
+    }
+
+    public Company getCompany() {
+        return company;
     }
 
     public String getName() {
@@ -96,8 +103,14 @@ public class AddNewUI extends PageBean implements Serializable
     }
 
     public void setYear(Integer year) {
-        this.year = year;
-        company.setYear(year);
+        try {
+            this.year = year;
+            company.setYear(year);
+        } catch (Exception e) {
+            this.year = 0;
+            company.setYear(0);
+        }
+
     }
 
     public Integer getBulstat() {
@@ -105,8 +118,13 @@ public class AddNewUI extends PageBean implements Serializable
     }
 
     public void setBulstat(Integer bulstat) {
-        this.bulstat = bulstat;
-        company.setBulstat(bulstat);
+        try {
+            this.bulstat = bulstat;
+            company.setBulstat(bulstat);
+        } catch (Exception e) {
+            this.bulstat = 0;
+            company.setBulstat(0);
+        }
     }
 
     public LocalDate getDateEst() {
@@ -115,7 +133,7 @@ public class AddNewUI extends PageBean implements Serializable
 
     public void setDateEst(LocalDate dateEst) {
         this.dateEst = dateEst;
-        company.setDate_est(dateEst);
+        company.setDateEst(dateEst);
     }
 
     // ------------------------------------------------------------------------

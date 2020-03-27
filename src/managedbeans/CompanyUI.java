@@ -1,20 +1,29 @@
 package managedbeans;
 
 import java.io.Serializable;
+import java.net.http.HttpClient;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.List;
+import java.util.Map;
 
 import db.Company;
 import org.eclnt.ccee.db.DBAction;
 import org.eclnt.ccee.db.dofw.DOFWSql;
+import org.eclnt.ccee.log.AppLog;
 import org.eclnt.editor.annotations.CCGenClass;
 import org.eclnt.jsfserver.defaultscreens.ModalPopup;
+import org.eclnt.jsfserver.defaultscreens.OKPopup;
 import org.eclnt.jsfserver.defaultscreens.Statusbar;
+import org.eclnt.jsfserver.defaultscreens.YESNOPopup;
 import org.eclnt.jsfserver.elements.impl.FIXGRIDItem;
 import org.eclnt.jsfserver.elements.impl.FIXGRIDListBinding;
 import org.eclnt.jsfserver.pagebean.PageBean;
+import org.eclnt.jsfserver.util.HttpSessionAccess;
+
 import javax.faces.event.ActionEvent;
+
+import static org.eclnt.util.log.CLogConstants.LL_INF;
 
 @CCGenClass (expressionBase="#{d.CompanyUI}")
 
@@ -54,6 +63,8 @@ public class CompanyUI extends PageBean implements Serializable
         });
     }
 
+
+
     public String getPageName() { return "/company.jsp"; }
     public String getRootExpressionUsedInPage() { return "#{d.CompanyUI}"; }
 
@@ -73,7 +84,19 @@ public class CompanyUI extends PageBean implements Serializable
     }
 
     public void onDeleteAction(javax.faces.event.ActionEvent event) {
-        Statusbar.outputMessage("onDelete");
+        FIXGRIDItem selectedItem = gridCompanies.getSelectedItem();
+        Integer id = gridCompanies.getSelectedItem().getCompany().getId();
+        final CompanyUI companyUI = this;
+        OKPopup p = OKPopup.createInstance("Be careful!", "Please confirm deleting by pressing OK.", new OKPopup.IOKCancelListener() {
+            @Override
+            public void reactOnOK() {
+                DOFWSql.delete(Company.class, new Object[] {"id", id});
+                gridCompanies.getRows().remove(selectedItem);
+                //HttpSessionAccess.reloadClient();
+            }
+            @Override public void reactOnCancel() {}
+        });
+        p.setShowCancel(true);
     }
 
     public void onSaveAction(javax.faces.event.ActionEvent event) {
@@ -89,37 +112,36 @@ public class CompanyUI extends PageBean implements Serializable
         DOFWSql.saveObject(row.getCompany());
     }
 
+    public void insertRow(Company company) {
+        CompanyRow newRow = new CompanyRow(this, company);
+        gridCompanies.getItems().add(newRow);
+    }
+
     public void onAddAction(javax.faces.event.ActionEvent event) {
-        final AddNewUI bean = new AddNewUI();
-        openModalPopup(bean, "", 600, 500, new ModalPopup.IModalPopupListener() {
+        AppLog.L.log(LL_INF, "*** ON ADD ***");
+        final AddNewUI bean = new AddNewUI(this);
+        //CompanyRow newRow = new CompanyRow(this, bean.getCompany());
+        //final CompanyUI companyUI = this;
+        ModalPopup p = openModalPopup(bean, "", 600, 500, new ModalPopup.IModalPopupListener() {
             @Override
             public void reactOnPopupClosedByUser() {
                 closePopup(bean);
             }
         });
-
-        //Statusbar.outputMessage("on add");
-        //System.out.println("+++ ON ADD +++");
-        //Company c = new Company();
-        ////c.setId(null);
-        //c.setName("KyulhanSoft6");
-        //c.setYear(2020);
-        //c.setBulstat(710228);
-        //DOFWSql.saveObject(c);
-        //
-        //new DBAction() {
-        //    @Override
-        //    protected void run() throws Exception {
-        //        PreparedStatement ps = createStatement(
-        //                "insert into public.\"Company\" (name, year, bulstat) values (?, ?, ?)"
-        //        );
-        //        ps.setString(1, "Assss");
-        //        ps.setInt(2, 2020);
-        //        ps.setInt(3, 710228);
-        //        ps.executeUpdate();
-        //    }
-        //};
+        p.setLeftTopReferenceCentered();
     }
+
+    //public void refreshGrid() {
+    //    List<CompanyRow> rows = gridCompanies.getRows();
+    //    rows.forEach((row) -> {
+    //        gridCompanies.getRows().remove(row);
+    //    });
+    //    List<Company> companies = DOFWSql.query(Company.class, new Object[] {});
+    //    companies.forEach((company) -> {
+    //        CompanyRow row = new CompanyRow(this, company);
+    //        gridCompanies.getItems().add(row);
+    //    });
+    //}
 
     // ------------------------------------------------------------------------
     // private usage

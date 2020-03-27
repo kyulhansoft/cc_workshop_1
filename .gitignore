@@ -1,2 +1,8 @@
 webcontentbuild/
 webcontentcc/
+.idea/
+.ccEclipseSynch
+.ccproject
+.classpath
+.project
+ec_cc_workshop_1.iml

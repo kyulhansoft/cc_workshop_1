@@ -6,7 +6,7 @@ import org.eclnt.ccee.db.dofw.annotations.doproperty;
 
 import java.time.LocalDate;
 
-@doentity(table="public.\"Company\"")
+//@doentity(table="public.\"Company\"")
 public class Employee {
     private int id;
     private String name1;
@@ -18,7 +18,7 @@ public class Employee {
     private int salary;
     private String iban;
 
-    @doproperty(key=true)
+    //@doproperty(key=true)
     public int getId() {
         return id;
     }
@@ -27,7 +27,7 @@ public class Employee {
         this.id = id;
     }
 
-    @doproperty
+    //@doproperty
     public String getName1() {
         return name1;
     }
@@ -36,7 +36,7 @@ public class Employee {
         this.name1 = name1;
     }
 
-    @doproperty
+    //@doproperty
     public String getName2() {
         return name2;
     }
@@ -45,7 +45,7 @@ public class Employee {
         this.name2 = name2;
     }
 
-    @doproperty
+    //@doproperty
     public String getName3() {
         return name3;
     }
@@ -54,7 +54,7 @@ public class Employee {
         this.name3 = name3;
     }
 
-    @doproperty
+    //@doproperty
     public int getYears() {
         return years;
     }
@@ -63,7 +63,7 @@ public class Employee {
         this.years = years;
     }
 
-    @doproperty
+    //@doproperty
     public int getCompanyId() {
         return companyId;
     }
@@ -72,7 +72,7 @@ public class Employee {
         this.companyId = companyId;
     }
 
-    @doproperty
+    //@doproperty
     public LocalDate getStartDate() {
         return startDate;
     }
@@ -81,7 +81,7 @@ public class Employee {
         this.startDate = startDate;
     }
 
-    @doproperty
+    //@doproperty
     public int getSalary() {
         return salary;
     }
@@ -90,7 +90,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    @doproperty
+    //@doproperty
     public String getIban() {
         return iban;
     }
