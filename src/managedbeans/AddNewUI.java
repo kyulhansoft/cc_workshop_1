@@ -76,7 +76,6 @@ public class AddNewUI extends PageBean implements Serializable
         }
         try {
             DOFWSql.saveObject(company);
-
             companyUI.insertRow(company);
             Statusbar.outputMessageWithPopup("The new company was added");
         } catch (Exception e) {

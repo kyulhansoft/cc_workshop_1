@@ -129,6 +129,15 @@ public class CompanyUI extends PageBean implements Serializable
             }
         });
         p.setLeftTopReferenceCentered();
+
+        try {
+            Company company = DOFWSql.queryOne(Company.class, new Object[] {"id", 30});
+            Statusbar.outputMessage(company.getName());
+        } catch (NullPointerException npe) {
+            Statusbar.outputError("30 not found");
+        }
+
+
     }
 
     //public void refreshGrid() {
