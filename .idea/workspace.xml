@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a8e21d6-51e8-465e-a69c-1208dc52b9e8" name="Default Changelist" comment="" />
+    <list default="true" id="6a8e21d6-51e8-465e-a69c-1208dc52b9e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/managedbeans/CompanyUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/managedbeans/CompanyUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/managedbeans/EmployeeRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/managedbeans/EmployeeRow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/managedbeans/EmployeeUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/managedbeans/EmployeeUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webcontent/employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webcontent/employee.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Zp1BucFnW17jH6FD09O29n1cXj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -15,11 +34,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/webcontent/WEB-INF/lib/eclnt_ccee.jar!/" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../zmgkshared" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -39,9 +61,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="335" y="168" width="1109" height="760" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585521336850" />
-    <state x="669" y="303" key="FileChooserDialogImpl" timestamp="1585521331704">
+    <state x="669" y="303" key="FileChooserDialogImpl" timestamp="1585564735215">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="669" y="303" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585521331704" />
+    <state x="669" y="303" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585564735215" />
+    <state x="215" y="187" width="1397" height="717" key="SettingsEditor" timestamp="1585550539040">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="215" y="187" width="1397" height="717" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585550539040" />
   </component>
 </project>

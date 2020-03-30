@@ -41,16 +41,10 @@ public class CompanyUI extends PageBean implements Serializable
     // ------------------------------------------------------------------------
     // members
     // ------------------------------------------------------------------------
-    FIXGRIDListBinding<CompanyRow> gridCompanies = new FIXGRIDListBinding<CompanyRow>();
-    public FIXGRIDListBinding<CompanyRow> getGridCompanies() {
-        return gridCompanies;
-    }
     private IListener m_listener;
-    public CompanyRow m_selCompanyRow;
-    public CompanyRow getSelCompanyRow() {
-        return m_selCompanyRow;
-    }
-    
+    private FIXGRIDListBinding<CompanyRow> gridCompanies = new FIXGRIDListBinding<CompanyRow>();
+    private CompanyRow m_selCompanyRow;
+
     // ------------------------------------------------------------------------
     // constructors & initialization
     // ------------------------------------------------------------------------
@@ -63,8 +57,6 @@ public class CompanyUI extends PageBean implements Serializable
         });
     }
 
-
-
     public String getPageName() { return "/company.jsp"; }
     public String getRootExpressionUsedInPage() { return "#{d.CompanyUI}"; }
 
@@ -75,6 +67,14 @@ public class CompanyUI extends PageBean implements Serializable
     /* Initialization of the bean. Add any parameter that is required within your scenario. */
     public void prepare(IListener listener) {
         m_listener = listener;
+    }
+
+    public FIXGRIDListBinding<CompanyRow> getGridCompanies() {
+        return gridCompanies;
+    }
+
+    public CompanyRow getSelCompanyRow() {
+        return m_selCompanyRow;
     }
 
     public void selectCompanyRow(CompanyRow companyRow) {
@@ -130,12 +130,12 @@ public class CompanyUI extends PageBean implements Serializable
         });
         p.setLeftTopReferenceCentered();
 
-        try {
-            Company company = DOFWSql.queryOne(Company.class, new Object[] {"id", 30});
-            Statusbar.outputMessage(company.getName());
-        } catch (NullPointerException npe) {
-            Statusbar.outputError("30 not found");
-        }
+        // try {
+        //     Company company = DOFWSql.queryOne(Company.class, new Object[] {"id", 30});
+        //     Statusbar.outputMessage(company.getName());
+        // } catch (NullPointerException npe) {
+        //     Statusbar.outputError("30 not found");
+        // }
 
 
     }

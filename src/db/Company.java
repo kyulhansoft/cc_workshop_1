@@ -46,8 +46,7 @@ public class Company {
         this.bulstat = bulstat;
     }
 
-    //@doproperty(column="date_est")
-    @doproperty
+    @doproperty(column="date_est")
     public LocalDate getDateEst() {
         return dateEst;
     }

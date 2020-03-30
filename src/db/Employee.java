@@ -67,6 +67,14 @@ public class Employee {
         this.salary = salary;
     }
 
+    public String getFormattedSalary() {
+        int a = (int)salary / 100;
+        Integer b = salary % 100;
+        String c = b.toString();
+        if (b < 10) { c = "0" + c; }
+        return a + "." + c;
+    }
+
     @doproperty(column="company_id")
     public int getCompanyId() {
         return companyId;
@@ -93,7 +101,7 @@ public class Employee {
 
     public Company getCompany() {
         try {
-            return DOFWSql.queryOne(Company.class, new Object[] {"id", getId()});
+            return DOFWSql.queryOne(Company.class, new Object[] {"id", getCompanyId()});
         } catch (NullPointerException npe) {
             return new Company();
         }
