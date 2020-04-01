@@ -5,25 +5,26 @@ import org.eclnt.ccee.db.dofw.annotations.doentity;
 import org.eclnt.ccee.db.dofw.annotations.doproperty;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @doentity(table="employee")
 public class Employee {
-    private int id;
+    private Integer id;
     private String name1;
     private String name2;
     private String name3;
     private int years;
-    private int companyId;
+    private Integer companyId;
     private int salary;
     private String iban;
     private LocalDate startDate;
-    private Company company;
+    //private Company company;
 
     @doproperty(key=true)
-    public int getId() {
+    public Integer getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -76,10 +77,10 @@ public class Employee {
     }
 
     @doproperty(column="company_id")
-    public int getCompanyId() {
+    public Integer getCompanyId() {
         return companyId;
     }
-    public void setCompanyId(int companyId) {
+    public void setCompanyId(Integer companyId) {
         this.companyId = companyId;
     }
 
@@ -105,5 +106,9 @@ public class Employee {
         } catch (NullPointerException npe) {
             return new Company();
         }
+    }
+
+    public List<Company> getListCompanies() {
+        return DOFWSql.query(Company.class, new Object[] {});
     }
 }

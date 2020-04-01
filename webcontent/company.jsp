@@ -17,7 +17,7 @@
 <t:rowbodypane id="g_4" >
 <t:row id="g_5" >
 <t:fixgrid id="g_6" avoidroundtrips="true" objectbinding="#{d.CompanyUI.gridCompanies}" width="100%" >
-<t:gridcol id="g_7" text="ID" width="10%" >
+<t:gridcol id="g_7" text="id" width="10%" >
 <t:label id="g_8" text=".{company.id}" />
 </t:gridcol>
 <t:gridcol id="g_9" text="Name" width="40%" >
@@ -66,7 +66,6 @@
 <t:button id="g_39" actionListener="#{d.CompanyUI.onAddAction}" text="Add New" />
 </t:row>
 </t:rowbodypane>
-<t:rowstatusbar id="g_40" />
 <t:pageaddons id="g_pa"/>
 </f:subview>
 </h:form>

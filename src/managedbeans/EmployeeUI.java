@@ -6,9 +6,12 @@ import java.util.List;
 import db.Employee;
 import org.eclnt.ccee.db.dofw.DOFWSql;
 import org.eclnt.editor.annotations.CCGenClass;
+import org.eclnt.jsfserver.defaultscreens.ModalPopup;
 import org.eclnt.jsfserver.defaultscreens.Statusbar;
 import org.eclnt.jsfserver.elements.impl.FIXGRIDListBinding;
+import org.eclnt.jsfserver.pagebean.IPageBean;
 import org.eclnt.jsfserver.pagebean.PageBean;
+import org.jetbrains.annotations.NotNull;
 
 import javax.faces.event.ActionEvent;
 
@@ -32,12 +35,14 @@ public class EmployeeUI extends PageBean implements Serializable
     private IListener m_listener;
     private FIXGRIDListBinding<EmployeeRow> gridEmployees = new FIXGRIDListBinding<EmployeeRow>();
     private EmployeeRow m_selectedRow;
+    private EmployeeDetailsUI employeeDetailsUI;
 
     // ------------------------------------------------------------------------
     // constructors & initialization
     // ------------------------------------------------------------------------
 
     public EmployeeUI() {
+        employeeDetailsUI = new EmployeeDetailsUI();
         List<Employee> employees = DOFWSql.query(Employee.class, new Object[] {});
         employees.forEach((employee) -> {
             EmployeeRow row = new EmployeeRow(this, employee);
@@ -64,14 +69,30 @@ public class EmployeeUI extends PageBean implements Serializable
 
     public EmployeeRow getSelectedRow() { return m_selectedRow; }
 
-    public void selectEmployeeRow(EmployeeRow employeeRow) {
+    public EmployeeDetailsUI getEmployeeDetailsUI() {
+        return  employeeDetailsUI;
+    }
+
+    public void selectEmployeeRow(@NotNull EmployeeRow employeeRow) {
         m_selectedRow = employeeRow;
         m_selectedRow.getChangeIndex().indicateChange();
+        employeeDetailsUI.setEmployee(employeeRow.getEmployee());
     }
 
     public void onDeselectAction(javax.faces.event.ActionEvent event) {
         Statusbar.outputMessage("onDeselectAction");
         gridEmployees.deselectCurrentSelection();
+    }
+
+    public void onNewEmployeeAction(javax.faces.event.ActionEvent event) {
+        EmployeeDetailsUI bean = new EmployeeDetailsUI();
+        ModalPopup p = openModalPopup(bean, "Title", 500, 500, new ModalPopup.IModalPopupListener() {
+            @Override
+            public void reactOnPopupClosedByUser() {
+                closePopup(bean);
+            }
+        });
+        p.setLeftTopReferenceCentered();
     }
 
     // ------------------------------------------------------------------------

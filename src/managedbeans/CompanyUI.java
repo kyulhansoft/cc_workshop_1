@@ -87,7 +87,8 @@ public class CompanyUI extends PageBean implements Serializable
         FIXGRIDItem selectedItem = gridCompanies.getSelectedItem();
         Integer id = gridCompanies.getSelectedItem().getCompany().getId();
         final CompanyUI companyUI = this;
-        OKPopup p = OKPopup.createInstance("Be careful!", "Please confirm deleting by pressing OK.", new OKPopup.IOKCancelListener() {
+        OKPopup p = OKPopup.createInstance("Be careful!", "Please confirm deleting by pressing OK.",
+                new OKPopup.IOKCancelListener() {
             @Override
             public void reactOnOK() {
                 DOFWSql.delete(Company.class, new Object[] {"id", id});

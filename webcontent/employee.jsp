@@ -16,7 +16,7 @@
 <t:rowheader id="g_3" />
 <t:rowbodypane id="g_4" >
 <t:row id="g_5" >
-<t:fixgrid id="g_6" height="40%" objectbinding="#{d.EmployeeUI.gridEmployees}" sbvisibleamount="20" width="100%" >
+<t:fixgrid id="g_6" enabled="false" height="30%" objectbinding="#{d.EmployeeUI.gridEmployees}" sbvisibleamount="20" width="100%" >
 <t:gridcol id="g_7" text="id" width="30" >
 <t:label id="g_8" text=".{employee.id}" />
 </t:gridcol>
@@ -24,7 +24,7 @@
 <t:label id="g_10" text=".{employee.name1}" />
 </t:gridcol>
 <t:gridcol id="g_11" text="Презиме" width="100" >
-<t:label id="g_12" text=".{employee.name2}" />
+<t:label id="g_12" text="#{d.EmployeeDetailsUI.comboListCompaniesVvb}" />
 </t:gridcol>
 <t:gridcol id="g_13" text="Фамилия" width="100" >
 <t:label id="g_14" text=".{employee.name3}" />
@@ -51,12 +51,22 @@
 </t:row>
 <t:rowdistance id="g_27" height="13" />
 <t:row id="g_28" >
-<t:pane id="g_29" height="60%" width="100%" >
-<t:rowpagebeaninclude id="g_30" pagebeanbinding="#{d.EmployeeDetailsUI}" shownullcontent="true" />
+<t:pane id="g_29" height="70%" width="400" >
+<t:rowpagebeaninclude id="g_30" pagebeanbinding="#{d.EmployeeUI.employeeDetailsUI}" shownullcontent="true" />
+</t:pane>
+<t:pane id="g_31" height="70%" padding="left:50" rowdistance="13" width="200" >
+<t:row id="g_32" >
+<t:button id="g_33" actionListener="#{d.EmployeeUI.onNewEmployeeAction}" text="New Employee" />
+</t:row>
+<t:row id="g_34" >
+<t:button id="g_35" text="Edit Selected" />
+</t:row>
+<t:row id="g_36" >
+<t:button id="g_37" text="Delete Selected" />
+</t:row>
 </t:pane>
 </t:row>
 </t:rowbodypane>
-<t:rowstatusbar id="g_31" />
 <t:pageaddons id="g_pa"/>
 </f:subview>
 </h:form>
