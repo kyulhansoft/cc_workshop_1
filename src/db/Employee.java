@@ -13,9 +13,9 @@ public class Employee {
     private String name1;
     private String name2;
     private String name3;
-    private int years;
+    private Integer years;
     private Integer companyId;
-    private int salary;
+    private Integer salary;
     private String iban;
     private LocalDate startDate;
     //private Company company;
@@ -53,23 +53,24 @@ public class Employee {
     }
 
     @doproperty
-    public int getYears() {
+    public Integer getYears() {
         return years;
     }
-    public void setYears(int years) {
+    public void setYears(Integer years) {
         this.years = years;
     }
 
     @doproperty
-    public int getSalary() {
+    public Integer getSalary() {
         return salary;
     }
-    public void setSalary(int salary) {
+    public void setSalary(Integer salary) {
+        //this.salary = Integer.parseInt(salary.split(".")[0] + salary.split(".")[1]);
         this.salary = salary;
     }
 
     public String getFormattedSalary() {
-        int a = (int)salary / 100;
+        Integer a = (int)salary / 100;
         Integer b = salary % 100;
         String c = b.toString();
         if (b < 10) { c = "0" + c; }

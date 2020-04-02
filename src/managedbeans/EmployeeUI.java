@@ -35,14 +35,14 @@ public class EmployeeUI extends PageBean implements Serializable
     private IListener m_listener;
     private FIXGRIDListBinding<EmployeeRow> gridEmployees = new FIXGRIDListBinding<EmployeeRow>();
     private EmployeeRow m_selectedRow;
-    private EmployeeDetailsUI employeeDetailsUI;
+    private EmployeeDetailsUI m_employeeDetailsUI;
 
     // ------------------------------------------------------------------------
     // constructors & initialization
     // ------------------------------------------------------------------------
 
     public EmployeeUI() {
-        employeeDetailsUI = new EmployeeDetailsUI();
+        m_employeeDetailsUI = new EmployeeDetailsUI();
         List<Employee> employees = DOFWSql.query(Employee.class, new Object[] {});
         employees.forEach((employee) -> {
             EmployeeRow row = new EmployeeRow(this, employee);
@@ -70,13 +70,13 @@ public class EmployeeUI extends PageBean implements Serializable
     public EmployeeRow getSelectedRow() { return m_selectedRow; }
 
     public EmployeeDetailsUI getEmployeeDetailsUI() {
-        return  employeeDetailsUI;
+        return  m_employeeDetailsUI;
     }
 
     public void selectEmployeeRow(@NotNull EmployeeRow employeeRow) {
         m_selectedRow = employeeRow;
         m_selectedRow.getChangeIndex().indicateChange();
-        employeeDetailsUI.setEmployee(employeeRow.getEmployee());
+        m_employeeDetailsUI.setEmployee(employeeRow.getEmployee());
     }
 
     public void onDeselectAction(javax.faces.event.ActionEvent event) {
@@ -85,7 +85,19 @@ public class EmployeeUI extends PageBean implements Serializable
     }
 
     public void onNewEmployeeAction(javax.faces.event.ActionEvent event) {
-        EmployeeDetailsUI employeeDetailsUI = new EmployeeDetailsUI();
+        openEmployeeDetailsUI(new EmployeeDetailsUI());
+    }
+
+    public void onEditEmployeeDetails(javax.faces.event.ActionEvent event) {
+        Statusbar.outputMessage("onEditEmployeeDetails");
+        if (m_selectedRow == null) {
+            Statusbar.outputAlert("Please select a row with employee info");
+            return;
+        }
+        openEmployeeDetailsUI(m_employeeDetailsUI);
+    }
+
+    private void openEmployeeDetailsUI(EmployeeDetailsUI employeeDetailsUI) {
         employeeDetailsUI.setButtonSaveEnabled(true);
         ModalPopup p = openModalPopup(employeeDetailsUI, "Title", 500, 500, new ModalPopup.IModalPopupListener() {
             @Override

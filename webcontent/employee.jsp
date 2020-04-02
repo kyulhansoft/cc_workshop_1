@@ -59,7 +59,7 @@
 <t:button id="g_33" actionListener="#{d.EmployeeUI.onNewEmployeeAction}" text="New Employee" />
 </t:row>
 <t:row id="g_34" >
-<t:button id="g_35" text="Edit Selected" />
+<t:button id="g_35" actionListener="#{d.EmployeeUI.onEditEmployeeDetails}" text="Edit Selected" />
 </t:row>
 <t:row id="g_36" >
 <t:button id="g_37" text="Delete Selected" />

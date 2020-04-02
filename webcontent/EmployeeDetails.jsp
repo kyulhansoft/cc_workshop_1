@@ -39,7 +39,7 @@
 </t:row>
 <t:row id="g_22" >
 <t:label id="g_23" text="Заплата" width="100" />
-<t:field id="g_24" text="#{d.EmployeeDetailsUI.employee.formattedSalary}" width="100" />
+<t:field id="g_24" text="#{d.EmployeeDetailsUI.employee.salary}" width="100" />
 </t:row>
 <t:row id="g_25" >
 <t:label id="g_26" text="IBAN" width="100" />

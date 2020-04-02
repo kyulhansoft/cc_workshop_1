@@ -105,7 +105,7 @@ public class EmployeeDetailsUI extends PageBean implements Serializable
         try {
             checkFields(employee);
         } catch (Exception e) {
-            Statusbar.outputAlert(e.getMessage(), "Title");
+            Statusbar.outputAlert(e.getMessage());
         }
 
     }
