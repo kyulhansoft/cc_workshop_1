@@ -4,14 +4,9 @@
     <list default="true" id="6a8e21d6-51e8-465e-a69c-1208dc52b9e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ec_cc_workshop_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ec_cc_workshop_1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/managedbeans/CompanyUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/managedbeans/CompanyUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/managedbeans/EmployeeDetailsUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/managedbeans/EmployeeDetailsUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/managedbeans/EmployeeUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/managedbeans/EmployeeUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webcontent/EmployeeDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webcontent/EmployeeDetails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webcontent/MainForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webcontent/MainForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webcontent/company.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webcontent/company.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webcontent/employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webcontent/employee.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +38,13 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/webcontent/WEB-INF/lib/eclnt_pbc.jar!/" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -64,6 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585521089937</updated>
+      <workItem from="1585812979253" duration="6163000" />
     </task>
     <task id="LOCAL-00001" summary="313131">
       <created>1585659836884</created>
@@ -74,6 +72,9 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="313131" />
@@ -96,10 +97,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="669" y="303" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585739933424" />
-    <state x="215" y="187" width="1397" height="717" key="SettingsEditor" timestamp="1585726902441">
+    <state x="215" y="187" width="1397" height="717" key="SettingsEditor" timestamp="1585824911987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="215" y="187" width="1397" height="717" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585726902441" />
+    <state x="215" y="187" width="1397" height="717" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585824911987" />
     <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585689394412">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

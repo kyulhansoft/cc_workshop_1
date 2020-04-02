@@ -51,7 +51,9 @@ public class EmployeeDetailsUI extends PageBean implements Serializable
     
     private IListener m_listener;
     private Employee employee;
+    private String m_buttonSaveEnabled = "false";
 
+    // combobox company
     String m_companyId;
     String m_literalId;
     CompanyLogic m_companyLogic = new CompanyLogic();
@@ -99,8 +101,37 @@ public class EmployeeDetailsUI extends PageBean implements Serializable
     }
 
     public void onSaveAction(javax.faces.event.ActionEvent event) {
-        //System.out.println(comboListCompaniesVvb.getValidValueByName(getCompanyName()).getValue());
-        System.out.println(employee.getName1() + " " + employee.getCompanyId());
+        //System.out.println(employee.getName1() + " " + employee.getCompanyId());
+        try {
+            checkFields(employee);
+        } catch (Exception e) {
+            Statusbar.outputAlert(e.getMessage(), "Title");
+        }
+
+    }
+
+    public void checkFields(Employee employee) throws Exception {
+        if (employee == null) {
+            throw new Exception("Please fill all fields");
+        }
+        if (employee.getId() == null || employee.getId() == 0) {
+            throw new Exception("Please fill data for 'Name'");
+        }
+    }
+
+    public void enableSaveButton() {
+
+    }
+
+    public void setButtonSaveEnabled(boolean enabled) {
+        if (enabled) {
+            m_buttonSaveEnabled = "true";
+            return;
+        }
+        m_buttonSaveEnabled = "false";
+    }
+    public String getSaveEnabled() {
+        return m_buttonSaveEnabled;
     }
 
     // ------------------------------------------------------------------------

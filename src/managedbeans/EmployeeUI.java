@@ -80,16 +80,17 @@ public class EmployeeUI extends PageBean implements Serializable
     }
 
     public void onDeselectAction(javax.faces.event.ActionEvent event) {
-        Statusbar.outputMessage("onDeselectAction");
+        //Statusbar.outputMessage("onDeselectAction");
         gridEmployees.deselectCurrentSelection();
     }
 
     public void onNewEmployeeAction(javax.faces.event.ActionEvent event) {
-        EmployeeDetailsUI bean = new EmployeeDetailsUI();
-        ModalPopup p = openModalPopup(bean, "Title", 500, 500, new ModalPopup.IModalPopupListener() {
+        EmployeeDetailsUI employeeDetailsUI = new EmployeeDetailsUI();
+        employeeDetailsUI.setButtonSaveEnabled(true);
+        ModalPopup p = openModalPopup(employeeDetailsUI, "Title", 500, 500, new ModalPopup.IModalPopupListener() {
             @Override
             public void reactOnPopupClosedByUser() {
-                closePopup(bean);
+                closePopup(employeeDetailsUI);
             }
         });
         p.setLeftTopReferenceCentered();
