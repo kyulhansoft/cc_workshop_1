@@ -20,7 +20,7 @@ public class Employee {
     private LocalDate startDate;
     //private Company company;
 
-    @doproperty(key=true)
+    @doproperty(key=true, autoIncrement=true)
     public Integer getId() {
         return id;
     }

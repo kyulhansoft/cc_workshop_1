@@ -24,7 +24,7 @@
 <t:label id="g_10" text=".{employee.name1}" />
 </t:gridcol>
 <t:gridcol id="g_11" text="Презиме" width="100" >
-<t:label id="g_12" text="#{d.EmployeeDetailsUI.comboListCompaniesVvb}" />
+<t:label id="g_12" text=".{employee.name2}" />
 </t:gridcol>
 <t:gridcol id="g_13" text="Фамилия" width="100" >
 <t:label id="g_14" text=".{employee.name3}" />

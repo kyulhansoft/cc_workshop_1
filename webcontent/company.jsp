@@ -14,7 +14,7 @@
 <t:beanprocessing id="g_1" />
 <t:rowtitlebar id="g_2" text="Companies" />
 <t:rowheader id="g_3" />
-<t:rowbodypane id="g_4" >
+<t:rowbodypane id="g_4" padding="left:0;right:0;top:10;bottom:10" >
 <t:row id="g_5" >
 <t:fixgrid id="g_6" avoidroundtrips="true" objectbinding="#{d.CompanyUI.gridCompanies}" width="100%" >
 <t:gridcol id="g_7" text="id" width="10%" >

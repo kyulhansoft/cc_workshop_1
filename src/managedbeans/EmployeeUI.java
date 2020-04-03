@@ -42,7 +42,7 @@ public class EmployeeUI extends PageBean implements Serializable
     // ------------------------------------------------------------------------
 
     public EmployeeUI() {
-        m_employeeDetailsUI = new EmployeeDetailsUI();
+        m_employeeDetailsUI = new EmployeeDetailsUI(this);
         List<Employee> employees = DOFWSql.query(Employee.class, new Object[] {});
         employees.forEach((employee) -> {
             EmployeeRow row = new EmployeeRow(this, employee);
@@ -85,11 +85,13 @@ public class EmployeeUI extends PageBean implements Serializable
     }
 
     public void onNewEmployeeAction(javax.faces.event.ActionEvent event) {
-        openEmployeeDetailsUI(new EmployeeDetailsUI());
+        EmployeeDetailsUI employeeDetailsUI = new EmployeeDetailsUI(this);
+        employeeDetailsUI.setEmployee(new Employee());
+        employeeDetailsUI.setAddToGridAfterSave(true);
+        openEmployeeDetailsUI(employeeDetailsUI);
     }
 
     public void onEditEmployeeDetails(javax.faces.event.ActionEvent event) {
-        Statusbar.outputMessage("onEditEmployeeDetails");
         if (m_selectedRow == null) {
             Statusbar.outputAlert("Please select a row with employee info");
             return;
@@ -106,6 +108,12 @@ public class EmployeeUI extends PageBean implements Serializable
             }
         });
         p.setLeftTopReferenceCentered();
+    }
+
+    public void addEmployee(Employee employee) {
+        EmployeeRow row = new EmployeeRow(this, employee);
+        getGridEmployees().getItems().add(row);
+        selectEmployeeRow(row);
     }
 
     // ------------------------------------------------------------------------

@@ -6,8 +6,7 @@
       <change beforePath="$PROJECT_DIR$/src/db/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/managedbeans/EmployeeDetailsUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/managedbeans/EmployeeDetailsUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/managedbeans/EmployeeUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/managedbeans/EmployeeUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webcontent/EmployeeDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webcontent/EmployeeDetails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webcontent/MainForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webcontent/MainForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webcontent/company.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webcontent/company.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webcontent/employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webcontent/employee.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +62,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585521089937</updated>
-      <workItem from="1585812979253" duration="9148000" />
+      <workItem from="1585812979253" duration="11042000" />
+      <workItem from="1585835608010" duration="53000" />
+      <workItem from="1585838301582" duration="1510000" />
+      <workItem from="1585907788816" duration="9032000" />
     </task>
     <task id="LOCAL-00001" summary="313131">
       <created>1585659836884</created>
@@ -107,5 +109,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585689394412" />
+    <state x="647" y="148" width="625" height="744" key="find.popup" timestamp="1585838369636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="647" y="148" width="625" height="744" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585838369636" />
   </component>
 </project>
