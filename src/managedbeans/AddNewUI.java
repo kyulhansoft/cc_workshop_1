@@ -75,10 +75,12 @@ public class AddNewUI extends PageBean implements Serializable
             return;
         }
         try {
+            companyUI.clearGrid();
             DOFWSql.saveObject(company);
-            companyUI.insertRow(company);
+            companyUI.loadGrid();
             Statusbar.outputMessageWithPopup("The new company was added");
         } catch (Exception e) {
+            e.printStackTrace();
             Statusbar.outputAlert(e.getMessage());
         }
 

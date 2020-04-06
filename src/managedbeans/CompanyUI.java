@@ -137,21 +137,32 @@ public class CompanyUI extends PageBean implements Serializable
         // } catch (NullPointerException npe) {
         //     Statusbar.outputError("30 not found");
         // }
-
-
     }
 
-    //public void refreshGrid() {
-    //    List<CompanyRow> rows = gridCompanies.getRows();
-    //    rows.forEach((row) -> {
-    //        gridCompanies.getRows().remove(row);
-    //    });
-    //    List<Company> companies = DOFWSql.query(Company.class, new Object[] {});
-    //    companies.forEach((company) -> {
-    //        CompanyRow row = new CompanyRow(this, company);
-    //        gridCompanies.getItems().add(row);
-    //    });
-    //}
+    public void clearGrid() {
+        List<CompanyRow> rows = gridCompanies.getRows();
+        gridCompanies.getItems().removeAll(rows);
+    }
+
+    public void loadGrid() {
+        List<Company> companies = DOFWSql.query(Company.class, new Object[] {});
+        companies.forEach((company) -> {
+            CompanyRow row = new CompanyRow(this, company);
+            gridCompanies.getItems().add(row);
+        });
+    }
+
+    public void refreshGrid() {
+       // List<CompanyRow> rows = gridCompanies.getRows();
+       // rows.forEach((row) -> {
+       //     gridCompanies.getRows().remove(row);
+       // });
+       // List<Company> companies = DOFWSql.query(Company.class, new Object[] {});
+       // companies.forEach((company) -> {
+       //     CompanyRow row = new CompanyRow(this, company);
+       //     gridCompanies.getItems().add(row);
+       // });
+    }
 
     // ------------------------------------------------------------------------
     // private usage

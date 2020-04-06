@@ -1,8 +1,12 @@
 package managedbeans;
 
 import java.io.Serializable;
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
 import java.util.List;
 
+import dynmenu.MenuItem;
+import dynmenu.MenuReader;
 import org.eclnt.editor.annotations.CCGenClass;
 import org.eclnt.jsfserver.defaultscreens.Statusbar;
 import org.eclnt.jsfserver.elements.ThreadData;
@@ -45,16 +49,33 @@ public class MainForm2UI extends PageBean implements Serializable {
             // } else {
             //     Statusbar.outputMessage("This was just a toggle...");
             // }
-            if (this.getText().equals("Employees")) {
-                if ((m_content == null) || (!m_content.getPageName().equals("employee.jsp"))) {
-                    m_content = new EmployeeUI();
+
+
+
+            // if (this.getText().equals("Employees")) {
+            //     if ((m_content == null) || (!m_content.getPageName().equals("employee.jsp"))) {
+            //         m_content = new EmployeeUI();
+            //     }
+            // }
+            // if (this.getText().equals("Companies")) {
+            //     if ((m_content == null) || (!m_content.getPageName().equals("company.jsp"))) {
+            //         m_content = new CompanyUI();
+            //     }
+            // }
+
+            //System.out.println((this.getText()));
+
+            m_menuItems.forEach((menuItem) -> {
+                if (this.getText().equals(menuItem.getCaption())) {
+                    String uiClass = "managedbeans." + menuItem.getBeanClass();
+                    try {
+                        m_content = (IPageBean) Class.forName(uiClass).getDeclaredConstructor().newInstance();
+                    } catch (ClassNotFoundException | IllegalAccessException | InstantiationException |
+                            NoSuchMethodException | InvocationTargetException e) {
+                        e.printStackTrace();
+                    }
                 }
-            }
-            if (this.getText().equals("Companies")) {
-                if ((m_content == null) || (!m_content.getPageName().equals("company.jsp"))) {
-                    m_content = new CompanyUI();
-                }
-            }
+            });
         }
 
         public String getTreeNodeBgpaint() {
@@ -78,15 +99,24 @@ public class MainForm2UI extends PageBean implements Serializable {
     private IPageBean m_content;
     FIXGRIDTreeBinding<TreeNode> m_tree = new FIXGRIDTreeBinding<TreeNode>();
     TreeNode m_treeNodeObserved = null;
+    ArrayList<MenuItem> m_menuItems;
     
     // ------------------------------------------------------------------------
     // constructors & initialization
     // ------------------------------------------------------------------------
 
     public MainForm2UI() {
+        MenuReader mr = new MenuReader();
+        m_menuItems = mr.getItems();
+
         TreeNode top = new TreeNode(m_tree.getRootNode(), "App", TreeNode.STATUS_OPENED);
-        new TreeNode(top, "Companies", TreeNode.STATUS_ENDNODE);
-        new TreeNode(top, "Employees", TreeNode.STATUS_ENDNODE);
+
+        // new TreeNode(top, "Companies", TreeNode.STATUS_ENDNODE);
+        // new TreeNode(top, "Employees", TreeNode.STATUS_ENDNODE);
+        m_menuItems.forEach((menuItem) -> {
+            new TreeNode(top, menuItem.getCaption(), TreeNode.STATUS_ENDNODE);
+        });
+
     }
 
     public String getPageName() { return "/MainForm2.jsp"; }

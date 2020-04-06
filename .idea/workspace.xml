@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a8e21d6-51e8-465e-a69c-1208dc52b9e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/managedbeans/EmployeeDetailsUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/managedbeans/EmployeeDetailsUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/managedbeans/EmployeeUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/managedbeans/EmployeeUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webcontent/company.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webcontent/company.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webcontent/employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webcontent/employee.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/managedbeans/AddNewUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/managedbeans/AddNewUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/managedbeans/CompanyUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/managedbeans/CompanyUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/managedbeans/MainForm2UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/managedbeans/MainForm2UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +47,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects\cc\cc_workshop_1\webcontent" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\projects\cc\cc_workshop_1\webcontent\WEB-INF\lib" />
     </key>
@@ -65,7 +67,10 @@
       <workItem from="1585812979253" duration="11042000" />
       <workItem from="1585835608010" duration="53000" />
       <workItem from="1585838301582" duration="1510000" />
-      <workItem from="1585907788816" duration="9032000" />
+      <workItem from="1585907788816" duration="13445000" />
+      <workItem from="1586156309795" duration="3344000" />
+      <workItem from="1586168715529" duration="3009000" />
+      <workItem from="1586174484895" duration="7685000" />
     </task>
     <task id="LOCAL-00001" summary="313131">
       <created>1585659836884</created>
@@ -89,6 +94,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="335" y="168" width="1109" height="760" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585739935554" />
+    <state x="765" y="213" key="#com.intellij.ide.util.MemberChooser" timestamp="1586177441144">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="213" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586177441144" />
     <state x="12" y="21" width="1857" height="980" key="CommitChangelistDialog2" timestamp="1585659836157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

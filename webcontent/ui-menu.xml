@@ -1,0 +1,12 @@
+<?xml version = "1.0"?>
+
+<items>
+    <item id="1">
+        <caption>Companies</caption>
+        <bean-class>CompanyUI</bean-class>
+    </item>
+    <item id="2">
+        <caption>Employees</caption>
+        <bean-class>EmployeeUI</bean-class>
+    </item>
+</items>
